@@ -1,0 +1,67 @@
+
+.dustbin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(253, 253, 253);
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    margin: 40px auto;
+    border: 5px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.dustbin-number {
+    margin-bottom: 20px;
+}
+
+
+.sections-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.section {
+    flex: 1;
+    padding: 20px;
+    margin: 0 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 10px;
+}
+
+.section.red {
+    background-color: #ff4d4d;
+}
+
+.section.green {
+    background-color: #4caf50;
+}
+
+.section.blue {
+    background-color: #2196f3;
+}
+
+@media (max-width: 768px) {
+    .sections-container {
+        flex-direction: column;
+    }
+
+    .section {
+        margin: 10px 0;
+    }
+}
